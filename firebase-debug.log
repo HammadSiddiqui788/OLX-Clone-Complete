@@ -1,0 +1,55 @@
+[debug] [2020-11-14T16:38:09.622Z] ----------------------------------------------------------------------
+[debug] [2020-11-14T16:38:09.627Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell Org\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-14T16:38:09.627Z] CLI Version:   8.1.1
+[debug] [2020-11-14T16:38:09.628Z] Platform:      win32
+[debug] [2020-11-14T16:38:09.628Z] Node Version:  v12.16.2
+[debug] [2020-11-14T16:38:09.630Z] Time:          Sat Nov 14 2020 21:38:09 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-11-14T16:38:09.631Z] ----------------------------------------------------------------------
+[debug] [2020-11-14T16:38:09.631Z] 
+[debug] [2020-11-14T16:38:09.646Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-14T16:38:09.647Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dell Org\Desktop\Web and mobile Hybrid Development\for Hamamd\olx-new-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using olxclone-316d2.
+[debug] [2020-11-14T16:38:14.871Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/olxclone-316d2  
+ 
+[debug] [2020-11-14T16:38:15.650Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 14 Nov 2020 16:38:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-14T16:38:15.650Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-11-14T16:38:15.652Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-11-14T16:38:15.654Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Dell Org\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Dell Org\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Dell Org\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\Dell Org\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\Dell Org\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:416:28)
+    at IncomingMessage.emit (events.js:322:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project olxclone-316d2. Please make sure the project exists and your account has permission to access it.
